@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\layout",
+    "\\src\\app\\layout\\admin",
+    "\\src\\app\\layout\\admin\\breadcrumbs",
+    "\\src\\app\\pages",
+    "\\src\\app\\pages\\dashboard",
+    "\\src\\app\\pages\\dashboard\\dashboard-default",
+    "\\src\\app\\pages\\user\\profile"
+  ],
+  "SelectedNode": "\\src\\app\\pages\\dashboard\\dashboard-default\\dashboard-default.component.ts",
+  "PreviewInSolutionExplorer": false
+}

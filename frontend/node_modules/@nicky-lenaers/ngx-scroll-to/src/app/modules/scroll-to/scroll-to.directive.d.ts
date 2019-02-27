@@ -1,0 +1,26 @@
+import { ElementRef, Renderer2, AfterViewInit } from '@angular/core';
+import { ScrollToOffsetMap, ScrollToTarget } from './models/scroll-to-config.model';
+import { ScrollToAnimationEasing } from './models/scroll-to-easing.model';
+import { ScrollToEvent } from './models/scroll-to-event.model';
+import { ScrollToService } from './scroll-to.service';
+export declare class ScrollToDirective implements AfterViewInit {
+    private _elementRef;
+    private _scrollToService;
+    private _renderer2;
+    ngxScrollTo: ScrollToTarget;
+    ngxScrollToEvent: ScrollToEvent;
+    ngxScrollToDuration: number;
+    ngxScrollToEasing: ScrollToAnimationEasing;
+    ngxScrollToOffset: number;
+    ngxScrollToOffsetMap: ScrollToOffsetMap;
+    private _options;
+    constructor(_elementRef: ElementRef, _scrollToService: ScrollToService, _renderer2: Renderer2);
+    /**
+     * Angular Lifecycle Hook - After View Init
+     *
+     * @todo Implement Subscription for Events
+     *
+     * @returns void
+     */
+    ngAfterViewInit(): void;
+}

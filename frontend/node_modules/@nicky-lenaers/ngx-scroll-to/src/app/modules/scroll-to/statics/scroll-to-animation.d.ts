@@ -1,0 +1,38 @@
+import { Observable } from 'rxjs/Observable';
+import { ScrollToConfigOptions, ScrollToListenerTarget } from '../models/scroll-to-config.model';
+export declare class ScrollToAnimation {
+    private _container;
+    private _listenerTarget;
+    private readonly _isWindow;
+    private readonly _to;
+    private readonly _options;
+    private _isBrowser;
+    private _tick;
+    private _interval;
+    private _timeLapsed;
+    private _percentage;
+    private _position;
+    private _startPosition;
+    private _distance;
+    private _source$;
+    private _windowScrollTop;
+    constructor(_container: HTMLElement, _listenerTarget: ScrollToListenerTarget, _isWindow: boolean, _to: number, _options: ScrollToConfigOptions, _isBrowser: boolean);
+    /**
+     * Start the new Scroll Animation.
+     *
+     * @returns       void
+     */
+    start(): Observable<any>;
+    /**
+     * Recursively loop over the Scroll Animation.
+     *
+     * @returns void
+     */
+    private _loop;
+    /**
+     * Stop the current Scroll Animation Loop.
+     *
+     * @param force 			Force to stop
+     */
+    stop(force?: boolean): void;
+}

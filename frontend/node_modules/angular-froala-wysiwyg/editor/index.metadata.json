@@ -1,0 +1,1 @@
+[{"__symbolic":"module","version":3,"metadata":{},"exports":[{"from":"./editor.directive","export":["FroalaEditorDirective"]},{"from":"./editor.module","export":["FroalaEditorModule"]}]},{"__symbolic":"module","version":1,"metadata":{},"exports":[{"from":"./editor.directive","export":["FroalaEditorDirective"]},{"from":"./editor.module","export":["FroalaEditorModule"]}]}]

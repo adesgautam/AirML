@@ -1,0 +1,145 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var TextDirective = (function () {
+    function TextDirective() {
+        this.newValue = new core_1.EventEmitter();
+    }
+    TextDirective.prototype.changeInput = function (value) {
+        if (this.rg === undefined) {
+            this.newValue.emit(value);
+        }
+        else {
+            var numeric = parseFloat(value);
+            if (!isNaN(numeric) && numeric >= 0 && numeric <= this.rg) {
+                this.newValue.emit({ v: numeric, rg: this.rg });
+            }
+        }
+    };
+    TextDirective.decorators = [
+        { type: core_1.Directive, args: [{
+                    selector: '[text]',
+                    host: {
+                        '(input)': 'changeInput($event.target.value)'
+                    }
+                },] },
+    ];
+    /** @nocollapse */
+    TextDirective.ctorParameters = function () { return []; };
+    TextDirective.propDecorators = {
+        'newValue': [{ type: core_1.Output, args: ['newValue',] },],
+        'text': [{ type: core_1.Input, args: ['text',] },],
+        'rg': [{ type: core_1.Input, args: ['rg',] },],
+    };
+    return TextDirective;
+}());
+exports.TextDirective = TextDirective;
+var SliderDirective = (function () {
+    function SliderDirective(el) {
+        var _this = this;
+        this.el = el;
+        this.newValue = new core_1.EventEmitter();
+        this.dragStart = new core_1.EventEmitter();
+        this.dragEnd = new core_1.EventEmitter();
+        this.listenerMove = function (event) { _this.move(event); };
+        this.listenerStop = function () { _this.stop(); };
+    }
+    SliderDirective.prototype.setCursor = function (event) {
+        var height = this.el.nativeElement.offsetHeight;
+        var width = this.el.nativeElement.offsetWidth;
+        var x = Math.max(0, Math.min(this.getX(event), width));
+        var y = Math.max(0, Math.min(this.getY(event), height));
+        if (this.rgX !== undefined && this.rgY !== undefined) {
+            this.newValue.emit({ s: x / width, v: (1 - y / height), rgX: this.rgX, rgY: this.rgY });
+        }
+        else if (this.rgX === undefined && this.rgY !== undefined) {
+            this.newValue.emit({ v: y / height, rg: this.rgY });
+        }
+        else {
+            this.newValue.emit({ v: x / width, rg: this.rgX });
+        }
+    };
+    SliderDirective.prototype.move = function (event) {
+        event.preventDefault();
+        this.setCursor(event);
+    };
+    SliderDirective.prototype.start = function (event) {
+        this.setCursor(event);
+        document.addEventListener('mousemove', this.listenerMove);
+        document.addEventListener('touchmove', this.listenerMove);
+        document.addEventListener('mouseup', this.listenerStop);
+        document.addEventListener('touchend', this.listenerStop);
+        this.dragStart.emit();
+    };
+    SliderDirective.prototype.stop = function () {
+        document.removeEventListener('mousemove', this.listenerMove);
+        document.removeEventListener('touchmove', this.listenerMove);
+        document.removeEventListener('mouseup', this.listenerStop);
+        document.removeEventListener('touchend', this.listenerStop);
+        this.dragEnd.emit();
+    };
+    SliderDirective.prototype.getX = function (event) {
+        return (event.pageX !== undefined ? event.pageX : event.touches[0].pageX) - this.el.nativeElement.getBoundingClientRect().left - window.pageXOffset;
+    };
+    SliderDirective.prototype.getY = function (event) {
+        return (event.pageY !== undefined ? event.pageY : event.touches[0].pageY) - this.el.nativeElement.getBoundingClientRect().top - window.pageYOffset;
+    };
+    SliderDirective.decorators = [
+        { type: core_1.Directive, args: [{
+                    selector: '[slider]',
+                    host: {
+                        '(mousedown)': 'start($event)',
+                        '(touchstart)': 'start($event)'
+                    }
+                },] },
+    ];
+    /** @nocollapse */
+    SliderDirective.ctorParameters = function () { return [
+        { type: core_1.ElementRef, },
+    ]; };
+    SliderDirective.propDecorators = {
+        'newValue': [{ type: core_1.Output, args: ['newValue',] },],
+        'dragStart': [{ type: core_1.Output, args: ['dragStart',] },],
+        'dragEnd': [{ type: core_1.Output, args: ['dragEnd',] },],
+        'slider': [{ type: core_1.Input, args: ['slider',] },],
+        'rgX': [{ type: core_1.Input, args: ['rgX',] },],
+        'rgY': [{ type: core_1.Input, args: ['rgY',] },],
+    };
+    return SliderDirective;
+}());
+exports.SliderDirective = SliderDirective;
+var SliderPosition = (function () {
+    function SliderPosition(h, s, v, a) {
+        this.h = h;
+        this.s = s;
+        this.v = v;
+        this.a = a;
+    }
+    return SliderPosition;
+}());
+exports.SliderPosition = SliderPosition;
+var SliderDimension = (function () {
+    function SliderDimension(h, s, v, a) {
+        this.h = h;
+        this.s = s;
+        this.v = v;
+        this.a = a;
+    }
+    return SliderDimension;
+}());
+exports.SliderDimension = SliderDimension;
+function detectIE() {
+    var ua = '';
+    if (typeof navigator !== "undefined") {
+        ua = navigator.userAgent.toLowerCase();
+    }
+    var msie = ua.indexOf('msie ');
+    if (msie > 0) {
+        // IE 10 or older => return version number
+        return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+    }
+    // other browser
+    return false;
+}
+exports.detectIE = detectIE;
+//# sourceMappingURL=helpers.js.map

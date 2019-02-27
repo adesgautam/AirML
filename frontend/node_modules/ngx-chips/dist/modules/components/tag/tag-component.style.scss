@@ -1,0 +1,41 @@
+:host,
+:host > div,
+:host > div:focus {
+    outline: 0;
+    overflow: hidden;
+    transition: opacity 1s;
+    z-index: 1;
+}
+
+:host {
+    max-width: 400px;
+}
+
+:host.blink {
+    -webkit-animation: blink 0.3s normal forwards ease-in-out;
+    animation: blink 0.3s normal forwards ease-in-out;
+}
+@keyframes blink {
+    0% {
+        opacity: 0.3;
+    }
+}
+
+:host .disabled {
+    cursor: not-allowed;
+}
+
+:host [contenteditable='true'] {
+    outline: 0;
+}
+
+.tag-wrapper {
+    flex-direction: row;
+    display: flex;
+}
+
+.tag__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

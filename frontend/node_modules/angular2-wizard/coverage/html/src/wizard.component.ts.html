@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/wizard.component.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">src/</a> wizard.component.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">44% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>22/50</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">11.76% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/17</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">44.44% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>20/45</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Component, OnInit, Output, EventEmitter, ContentChildren, QueryList, AfterContentInit } from '@angular/core';
+import { WizardStepComponent } from './wizard-step.component';
+&nbsp;
+@Component({
+  selector: 'form-wizard',
+  template:
+  `&lt;div class="card"&gt;
+    &lt;div class="card-header"&gt;
+      &lt;ul class="nav nav-justified"&gt;
+        &lt;li class="nav-item" *ngFor="let step of steps" [ngClass]="{'active': step.isActive, 'enabled': !step.isDisabled, 'disabled': step.isDisabled}"&gt;
+          &lt;a (click)="goToStep(step)"&gt;{{step.title}}&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="card-block"&gt;
+      &lt;ng-content&gt;&lt;/ng-content&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer" [hidden]="isCompleted"&gt;
+        &lt;button type="button" class="btn btn-secondary float-left" (click)="previous()" [hidden]="!hasPrevStep || !activeStep.showPrev"&gt;Previous&lt;/button&gt;
+        &lt;button type="button" class="btn btn-secondary float-right" (click)="next()" [disabled]="!activeStep.isValid" [hidden]="!hasNextStep || !activeStep.showNext"&gt;Next&lt;/button&gt;
+        &lt;button type="button" class="btn btn-secondary float-right" (click)="complete()" [disabled]="!activeStep.isValid" [hidden]="hasNextStep"&gt;Done&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;`
+  ,
+  styles: [
+    '.card { height: 100%; }',
+    '.card-header { background-color: #fff; padding: 0; font-size: 1.25rem; }',
+    '.card-block { overflow-y: auto; }',
+    '.card-footer { background-color: #fff; border-top: 0 none; }',
+    '.nav-item { padding: 1rem 0rem; border-bottom: 0.5rem solid #ccc; }',
+    '.active { font-weight: bold; color: black; border-bottom-color: #1976D2 !important; }',
+    '.enabled { border-bottom-color: rgb(88, 162, 234); }',
+    '.disabled { color: #ccc; }'
+  ]
+})
+export class WizardComponent implements OnInit, AfterContentInit {
+  @ContentChildren(WizardStepComponent) wizardSteps: QueryList&lt;WizardStepComponent&gt;;
+  private _steps: Array&lt;WizardStepComponent&gt; = [];
+  private _isCompleted: boolean = false;
+&nbsp;
+  @Output() onStepChanged: EventEmitter&lt;WizardStepComponent&gt; = new EventEmitter&lt;WizardStepComponent&gt;();
+&nbsp;
+  constructor() { }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  ngOnInit() {</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >  ngAfterContentInit() {</span></span>
+<span class="cstat-no" title="statement not covered" >    this.wizardSteps.forEach(step<span class="fstat-no" title="function not covered" > =&gt; <span class="cstat-no" title="statement not covered" >this._steps.push(step))</span></span>;</span>
+<span class="cstat-no" title="statement not covered" >    this._steps[0].isActive = true;</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  private get steps(): Array&lt;WizardStepComponent&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    return this._steps;</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  private get isCompleted(): boolean {</span>
+<span class="cstat-no" title="statement not covered" >    return this._isCompleted;</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  private get activeStep(): WizardStepComponent {</span>
+<span class="cstat-no" title="statement not covered" >    return this._steps.find(step<span class="fstat-no" title="function not covered" > =&gt; <span class="cstat-no" title="statement not covered" >step.isActive)</span></span>;</span>
+  }
+&nbsp;
+  private set activeStep(step: WizardStepComponent<span class="fstat-no" title="function not covered" >) {</span>
+<span class="cstat-no" title="statement not covered" >    if (step !== this.activeStep &amp;&amp; !step.isDisabled) {</span>
+<span class="cstat-no" title="statement not covered" >      this.activeStep.isActive = false;</span>
+<span class="cstat-no" title="statement not covered" >      step.isActive = true;</span>
+<span class="cstat-no" title="statement not covered" >      this.onStepChanged.emit(step);</span>
+    }
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  private get activeStepIndex(): number {</span>
+<span class="cstat-no" title="statement not covered" >    return this._steps.indexOf(this.activeStep);</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  private get hasNextStep(): boolean {</span>
+<span class="cstat-no" title="statement not covered" >    return this.activeStepIndex &lt; this._steps.length - 1;</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  private get hasPrevStep(): boolean {</span>
+<span class="cstat-no" title="statement not covered" >    return this.activeStepIndex &gt; 0;</span>
+  }
+&nbsp;
+  goToStep(step: WizardStepComponent<span class="fstat-no" title="function not covered" >) {</span>
+<span class="cstat-no" title="statement not covered" >    this.activeStep = step;</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  next() {</span>
+<span class="cstat-no" title="statement not covered" >    if (this.hasNextStep) {</span>
+      let nextStep: WizardStepComponent = <span class="cstat-no" title="statement not covered" >this._steps[this.activeStepIndex + 1];</span>
+<span class="cstat-no" title="statement not covered" >      this.activeStep.onNext.emit();</span>
+<span class="cstat-no" title="statement not covered" >      nextStep.isDisabled = false;</span>
+<span class="cstat-no" title="statement not covered" >      this.activeStep = nextStep;</span>
+    }
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  previous() {</span>
+<span class="cstat-no" title="statement not covered" >    if (this.hasPrevStep) {</span>
+      let prevStep: WizardStepComponent = <span class="cstat-no" title="statement not covered" >this._steps[this.activeStepIndex - 1];</span>
+<span class="cstat-no" title="statement not covered" >      this.activeStep.onPrev.emit();</span>
+<span class="cstat-no" title="statement not covered" >      prevStep.isDisabled = false;</span>
+<span class="cstat-no" title="statement not covered" >      this.activeStep = prevStep;</span>
+    }
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  complete() {</span>
+<span class="cstat-no" title="statement not covered" >    this._isCompleted = true;</span>
+<span class="cstat-no" title="statement not covered" >    this.activeStep.onComplete.emit();</span>
+  }
+&nbsp;
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Feb 13 2017 20:11:49 GMT-0600 (CST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

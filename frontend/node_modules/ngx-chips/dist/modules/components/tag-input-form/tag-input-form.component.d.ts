@@ -1,0 +1,32 @@
+import { EventEmitter } from '@angular/core';
+import { FormGroup, ValidatorFn, AbstractControl, AsyncValidatorFn } from '@angular/forms';
+export declare class TagInputForm {
+    onSubmit: EventEmitter<any>;
+    onBlur: EventEmitter<any>;
+    onFocus: EventEmitter<any>;
+    onKeyup: EventEmitter<any>;
+    onKeydown: EventEmitter<any>;
+    placeholder: string;
+    validators: ValidatorFn[];
+    asyncValidators: AsyncValidatorFn[];
+    inputId: string;
+    inputClass: string;
+    inputText: string;
+    tabindex: string;
+    disabled: boolean;
+    input: any;
+    form: FormGroup;
+    inputTextChange: EventEmitter<string>;
+    inputTextValue: string;
+    ngOnInit(): void;
+    readonly value: AbstractControl | null;
+    isInputFocused(): boolean;
+    getErrorMessages(messages: any): string[];
+    hasErrors(): boolean;
+    focus(): void;
+    blur(): void;
+    getElementPosition(): ClientRect;
+    destroy(): void;
+    onKeyDown($event: any): void;
+    submit($event: any): void;
+}

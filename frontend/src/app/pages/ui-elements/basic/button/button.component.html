@@ -1,0 +1,869 @@
+<div class="button-page">
+ 
+ <div class="row">
+   
+ <div class="col-sm-12">
+     
+ <app-card [title]="'Color States'">
+        
+<p>Checkout color states of all buttons on popover to buttons</p>
+        
+<ng-template #popContent>
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                
+<span class='block'>Normal</span>
+                <span class='block'>
+                          <small>#BDC3C7</small>
+                        </span>
+              
+</div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#BDC3C7;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Hover</span>
+                <span class='block'>
+                        <small>#D9DCDE</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#D9DCDE;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Active</span>
+                <span class='block'>
+                        <small>#9CA5AB</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+ <div class='display-color' style='background-color:#9CA5AB;'></div>
+ </div>
+</div>
+</div>
+<div class='color-code'> <div class='row'>
+             
+ <div class='col-sm-6 col-xs-12'>
+ <span class='block'>Disabled</span>
+                <span class='block'>
+  <small>#DEE1E3</small>
+                      </span>
+ 
+ </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#DEE1E3;'></div>
+              </div>
+
+ </div>
+          </div>
+     </ng-template>
+<button type="button" class="btn btn-default" popoverTitle="Default color states" placement="bottom" [ngbPopover]="popContent">Default button</button>
+        <ng-template #primaryContent>
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Normal</span>
+                <span class='block'>
+                          <small>#1ABC9C</small>
+                        </span>
+              </div>
+      <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#1ABC9C;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Hover</span>
+                <span class='block'>
+                        <small>#28E1BD</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+               
+ <div class='display-color' style='background-color:#28E1BD;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+ 
+ <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Active</span>
+                <span class='block'>
+                        <small>#13866F</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+         <div class='display-color' style='background-color:#13866F;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Disabled</span>
+                <span class='block'>
+                        <small>#8CDDCD</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#8CDDCD;'></div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <button type="button" class="btn btn-primary" popoverTitle="Primary color states" placement="bottom" [ngbPopover]="primaryContent">Primary button</button>
+        <ng-template #successContent>
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Normal</span>
+                <span class='block'>
+                          <small>#2ECC71</small>
+                        </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#2ECC71;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Hover</span>
+                <span class='block'>
+                        <small>#54D98C</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#54D98C;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Active</span>
+                <span class='block'>
+                        <small>#239A55</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#239A55;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Disabled</span>
+                <span class='block'>
+                        <small>#96E5B8</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#96E5B8;'></div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <button type="button" class="btn btn-success" popoverTitle="Success color states" placement="bottom" [ngbPopover]="successContent">Success button</button>
+        <ng-template #infoContent>
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Normal</span>
+                <span class='block'>
+                          <small>#5DADE2</small>
+                        </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#5DADE2;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Hover</span>
+                <span class='block'>
+                        <small>#88C3EA</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#88C3EA;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Active</span>
+                <span class='block'>
+                        <small>#2993D9</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#2993D9;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Disabled</span>
+                <span class='block'>
+                        <small>#AED6F0</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#AED6F0;'></div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <button type="button" class="btn btn-info" popoverTitle="Info color states" placement="bottom" [ngbPopover]="infoContent">Info button</button>
+        <ng-template #warningContent>
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Normal</span>
+                <span class='block'>
+                          <small>#F1C40F</small>
+                        </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#F1C40F;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Hover</span>
+                <span class='block'>
+                        <small>#F4D03F</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#F4D03F;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Active</span>
+                <span class='block'>
+                        <small>#B8960B</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#B8960B;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Disabled</span>
+                <span class='block'>
+                        <small>#F8E187</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#F8E187;'></div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <button type="button" class="btn btn-warning" popoverTitle="Warning color states" placement="bottom" [ngbPopover]="warningContent">warning button</button>
+        <ng-template #dangerContent>
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Normal</span>
+                <span class='block'>
+                          <small>#E74C3C</small>
+                        </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#E74C3C;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Hover</span>
+                <span class='block'>
+                        <small>#ED7669</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#ED7669;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Active</span>
+                <span class='block'>
+                        <small>#CD2A19</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#CD2A19;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Disabled</span>
+                <span class='block'>
+                        <small>#F3A59D</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#F3A59D;'></div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <button type="button" class="btn btn-danger" popoverTitle="Danger color states" placement="bottom" [ngbPopover]="dangerContent">Danger button</button>
+        <ng-template #inverseContent>
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Normal</span>
+                <span class='block'>
+                          <small>#34495E</small>
+                        </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#34495E;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Hover</span>
+                <span class='block'>
+                        <small>#46627F</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#46627F;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Active</span>
+                <span class='block'>
+                        <small>#1E2A37</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#1E2A37;'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='color-code'>
+            <div class='row'>
+              <div class='col-sm-6 col-xs-12'>
+                <span class='block'>Disabled</span>
+                <span class='block'>
+                        <small>#99A4AE</small>
+                      </span>
+              </div>
+              <div class='col-sm-6 col-xs-12'>
+                <div class='display-color' style='background-color:#99A4AE;'></div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <button type="button" class="btn btn-inverse" popoverTitle="Inverse color states" placement="bottom" [ngbPopover]="inverseContent">Inverse button</button>
+        <button type="button" class="btn btn-disabled disabled" popoverTitle="Disabled color states" placement="bottom" [ngbPopover]="'Vivamus sagittis lacus vel augue laoreet rutrum faucibus.'">Disabled button</button>
+      </app-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <app-card [title]="'Basic Buttons'">
+        <!-- button Default -->
+        <h4 class="sub-title">Buttons</h4>
+        <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code>element.</p>
+        <button class="btn btn-default">Default Button</button>
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-success">Success Button</button>
+        <button class="btn btn-info">Info Button</button>
+        <button class="btn btn-warning">Warning Button</button>
+        <button class="btn btn-danger">Danger Button</button>
+        <button class="btn btn-inverse">Inverse Button</button>
+        <button class="btn btn-disabled disabled">Disabled Button</button>
+        <!-- button Rounded -->
+        <h4 class="sub-title">Rounded buttons</h4>
+        <p> Add <code>.btn-round</code> to default button to get rounded corners.</p>
+        <button class="btn btn-default btn-round">Default Button</button>
+        <button class="btn btn-primary btn-round">Primary Button</button>
+        <button class="btn btn-success btn-round">Success Button</button>
+        <button class="btn btn-info btn-round">Info Button</button>
+        <button class="btn btn-warning btn-round">Warning Button</button>
+        <button class="btn btn-danger btn-round">Danger Button</button>
+        <button class="btn btn-inverse btn-round">Inverse Button</button>
+        <button class="btn btn-disabled btn-round disabled">Disabled Button</button>
+        <!-- buttton square -->
+        <h4 class="sub-title">Square Buttons</h4>
+        <p> Add <code>.btn-square</code> to default button to get square corners.</p>
+        <button class="btn btn-default btn-square">Default Button</button>
+        <button class="btn btn-primary btn-square">Primary Button</button>
+        <button class="btn btn-success btn-square">Success Button</button>
+        <button class="btn btn-info btn-square">Info Button</button>
+        <button class="btn btn-warning btn-square">Warning Button</button>
+        <button class="btn btn-danger btn-square">Danger Button</button>
+        <button class="btn btn-inverse btn-square">Inverse Button</button>
+        <button class="btn btn-disabled btn-square disabled">Disabled Button</button>
+        <!-- buttton skew -->
+        <h4 class="sub-title">Skew Buttons</h4>
+        <p> Add <code>.btn-skew</code> to default button to get skew Buttons.</p>
+        <button class="btn btn-default btn-skew">Default Button</button>
+        <button class="btn btn-primary btn-skew">Primary Button</button>
+        <button class="btn btn-success btn-skew">Success Button</button>
+        <button class="btn btn-info btn-skew">Info Button</button>
+        <button class="btn btn-warning btn-skew">Warning Button</button>
+        <button class="btn btn-danger btn-skew">Danger Button</button>
+        <button class="btn btn-inverse btn-skew">Inverse Button</button>
+        <button class="btn btn-disabled btn-skew disabled">Disabled Button</button>
+      </app-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <app-card [title]="'Buttons With Icon'">
+        <!-- button Default -->
+        <p>Use <code>&lt;i class="icofont icofont-star"&gt;</code> inside button to add icon.</p>
+        <button class="btn btn-default"><i class="icofont icofont-star"></i>Default Button</button>
+        <button class="btn btn-primary"><i class="icofont icofont-user-alt-3"></i>Primary Button</button>
+        <button class="btn btn-success"><i class="icofont icofont-check-circled"></i>Success Button</button>
+        <button class="btn btn-info"><i class="icofont icofont-info-square"></i>Info Button</button>
+        <button class="btn btn-warning"><i class="icofont icofont-warning-alt"></i>Warning Button</button>
+        <button class="btn btn-danger"><i class="icofont icofont-eye-alt"></i>Danger Button</button>
+        <button class="btn btn-inverse"><i class="icofont icofont-exchange"></i>Inverse Button</button>
+        <button class="btn btn-disabled disabled"><i class="icofont icofont-not-allowed"></i>Disabled Button</button>
+      </app-card>
+    </div>
+    <!-- Border button -->
+    <div class="col-sm-6">
+      <app-card [title]="'Border Buttons'">
+        <!-- button Default -->
+        <p>Use Class <code>btn-outline-*</code> inside button to make Border Button.</p>
+        <button class="btn btn-default btn-outline-default"><i class="icofont icofont-star"></i>DefaultButton</button>
+        <button class="btn btn-primary btn-outline-primary"><i class="icofont icofont-user-alt-3"></i>PrimaryButton</button>
+        <button class="btn btn-success btn-outline-success"><i class="icofont icofont-check-circled"></i>SuccessButton</button>
+        <button class="btn btn-info btn-outline-info"><i class="icofont icofont-info-square"></i>Info Button</button>
+        <button class="btn btn-warning btn-outline-warning"><i class="icofont icofont-warning-alt"></i>WarningButton</button>
+        <button class="btn btn-danger btn-outline-danger"><i class="icofont icofont-eye-alt"></i>DangerButton</button>
+        <button class="btn btn-inverse btn-outline-inverse"><i class="icofont icofont-exchange"></i>InverseButton</button>
+        <button class="btn btn-disabled btn-outline-disabled disabled"><i class="icofont icofont-not-allowed"></i>Disabled Button</button>
+      </app-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <app-card [title]="'Buttons Dropdown'">
+        <!-- button Default -->
+        <div ngbDropdown class="dropdown-default dropdown open">
+          <button ngbDropdownToggle class="btn btn-default dropdown-toggle waves-effect waves-light " type="button" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">primary</button>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown1" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Action</a>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Another action</a>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Something else here</a>
+          </div>
+        </div>
+        <div ngbDropdown class="dropdown-primary dropdown open">
+          <button ngbDropdownToggle class="btn btn-primary dropdown-toggle waves-effect waves-light " type="button" id="dropdown-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Primary</button>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown-2" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Action</a>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Another action</a>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Something else here</a>
+          </div>
+        </div>
+        <div ngbDropdown class="dropdown-success dropdown open">
+          <button ngbDropdownToggle class="btn btn-success dropdown-toggle waves-effect waves-light " type="button" id="dropdown-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Success</button>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown-3" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Action</a>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Another action</a>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Something else here</a>
+          </div>
+        </div>
+        <div ngbDropdown class="dropdown-info dropdown open">
+          <button ngbDropdownToggle class="btn btn-info dropdown-toggle waves-effect waves-light " type="button" id="dropdown-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Info</button>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown-4" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Action</a>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Another action</a>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Something else here</a>
+          </div>
+        </div>
+        <div ngbDropdown class="dropdown-warning dropdown open">
+          <button ngbDropdownToggle class="btn btn-warning dropdown-toggle waves-effect waves-light " type="button" id="dropdown-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Warning</button>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown-5" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Action</a>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Another action</a>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Something else here</a>
+          </div>
+        </div>
+        <div ngbDropdown class="dropdown-danger dropdown open">
+          <button ngbDropdownToggle class="btn btn-danger dropdown-toggle waves-effect waves-light " type="button" id="dropdown-6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Danger</button>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown-6" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Action</a>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Another action</a>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Something else here</a>
+          </div>
+        </div>
+        <div ngbDropdown class="dropdown-inverse dropdown open">
+          <button ngbDropdownToggle class="btn btn-inverse dropdown-toggle waves-effect waves-light " type="button" id="dropdown-7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Inverse</button>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown-7" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Action</a>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Another action</a>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Something else here</a>
+          </div>
+        </div>
+        <div ngbDropdown class="dropdown-disabled dropdown open">
+          <button ngbDropdownToggle class="btn btn-disabled dropdown-toggle waves-effect waves-light disabled" type="button" id="dropdown-8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Disabled</button>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown-8" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Action</a>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Another action</a>
+            <a class="dropdown-item waves-light waves-effect" href="javascript:;">Something else here</a>
+          </div>
+        </div>
+      </app-card>
+    </div>
+    <!-- Border button -->
+    <div class="col-sm-6">
+      <app-card [title]="'Buttons with split dropdown with icon'">
+        <!-- button Default -->
+        <div ngbDropdown class="btn-group dropdown-split-default">
+          <button type="button" class="btn btn-default"><i class="icofont icofont-star"></i>Default</button>
+          <button type="button" ngbDropdownToggle class="btn btn-default dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle primary</span>
+          </button>
+          <div ngbDropdownMenu class="dropdown-menu">
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Action</a>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Another action</a>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Separated link</a>
+          </div>
+        </div>
+        <div ngbDropdown class="btn-group dropdown-split-primary">
+          <button type="button" class="btn btn-primary"><i class="icofont icofont-user-alt-3"></i>Primary</button>
+          <button type="button" ngbDropdownToggle class="btn btn-primary dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle primary</span>
+          </button>
+          <div ngbDropdownMenu class="dropdown-menu">
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Action</a>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Another action</a>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Separated link</a>
+          </div>
+        </div>
+        <div ngbDropdown class="btn-group dropdown-split-success">
+          <button type="button" class="btn btn-success"><i class="icofont icofont-check-circled"></i>Success</button>
+          <button type="button" ngbDropdownToggle class="btn btn-success dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle primary</span>
+          </button>
+          <div ngbDropdownMenu class="dropdown-menu">
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Action</a>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Another action</a>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Separated link</a>
+          </div>
+        </div>
+        <div ngbDropdown class="btn-group dropdown-split-info">
+          <button type="button" class="btn btn-info"><i class="icofont icofont-info-square"></i>Info</button>
+          <button type="button" ngbDropdownToggle class="btn btn-info dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle primary</span>
+          </button>
+          <div ngbDropdownMenu class="dropdown-menu">
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Action</a>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Another action</a>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Separated link</a>
+          </div>
+        </div>
+        <div ngbDropdown class="btn-group dropdown-split-warning">
+          <button type="button" class="btn btn-warning"><i class="icofont icofont-warning-alt"></i>Warning</button>
+          <button type="button" ngbDropdownToggle class="btn btn-warning dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle primary</span>
+          </button>
+          <div ngbDropdownMenu class="dropdown-menu">
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Action</a>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Another action</a>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Separated link</a>
+          </div>
+        </div>
+        <div ngbDropdown class="btn-group dropdown-split-danger">
+          <button type="button" class="btn btn-danger"><i class="icofont icofont-eye-alt"></i>Danger</button>
+          <button type="button" ngbDropdownToggle class="btn btn-danger dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle primary</span>
+          </button>
+          <div ngbDropdownMenu class="dropdown-menu">
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Action</a>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Another action</a>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Separated link</a>
+          </div>
+        </div>
+        <div ngbDropdown class="btn-group dropdown-split-inverse">
+          <button type="button" class="btn btn-inverse"><i class="icofont icofont-exchange"></i>Inverse</button>
+          <button type="button" ngbDropdownToggle class="btn btn-inverse dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle primary</span>
+          </button>
+          <div ngbDropdownMenu class="dropdown-menu">
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Action</a>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Another action</a>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Separated link</a>
+          </div>
+        </div>
+        <div ngbDropdown class="btn-group dropdown-split-disabled">
+          <button type="button" class="btn btn-disabled disabled"><i class="icofont icofont-not-allowed"></i>Disabled</button>
+          <button type="button" ngbDropdownToggle class="btn btn-disabled disabled dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle primary</span>
+          </button>
+          <div ngbDropdownMenu class="dropdown-menu">
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Action</a>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Another action</a>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item waves-effect waves-light" href="javascript:;">Separated link</a>
+          </div>
+        </div>
+      </app-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <app-card [title]="'Icon Button'" [blockClass]="'icon-btn'">
+        <!-- button Default -->
+        <p>Use <code>&lt;i class="icofont icofont-star"&gt;</code> inside button to add icon.</p>
+        <div>
+          <button class="btn btn-default"><i class="icofont icofont-star"></i></button>
+          <button class="btn btn-primary"><i class="icofont icofont-user-alt-3"></i></button>
+          <button class="btn btn-success"><i class="icofont icofont-check-circled"></i></button>
+          <button class="btn btn-info"><i class="icofont icofont-info-square"></i></button>
+          <button class="btn btn-warning"><i class="icofont icofont-warning-alt"></i></button>
+          <button class="btn btn-danger"><i class="icofont icofont-eye-alt"></i></button>
+          <button class="btn btn-inverse"><i class="icofont icofont-exchange"></i></button>
+          <button class="btn btn-disabled disabled"><i class="icofont icofont-not-allowed"></i></button>
+        </div>
+        <div>
+          <button class="btn btn-default btn-icon"><i class="icofont icofont-star"></i></button>
+          <button class="btn btn-primary btn-icon"><i class="icofont icofont-user-alt-3"></i></button>
+          <button class="btn btn-success btn-icon"><i class="icofont icofont-check-circled"></i></button>
+          <button class="btn btn-info btn-icon"><i class="icofont icofont-info-square"></i></button>
+          <button class="btn btn-warning btn-icon"><i class="icofont icofont-warning-alt"></i></button>
+          <button class="btn btn-danger btn-icon"><i class="icofont icofont-eye-alt"></i></button>
+          <button class="btn btn-inverse btn-icon"><i class="icofont icofont-exchange"></i></button>
+          <button class="btn btn-disabled btn-icon disabled"><i class="icofont icofont-not-allowed"></i>
+          </button>
+        </div>
+      </app-card>
+    </div>
+    <!-- Border button -->
+    <div class="col-sm-6">
+      <app-card [title]="'Icon Border Buttons'" [blockClass]="'icon-btn'">
+        <!-- button Default -->
+        <p>Use Class <code>btn-outline-*</code> inside button to make Border Button.</p>
+        <div>
+          <button class="btn btn-default btn-outline-default"><i class="icofont icofont-star"></i></button>
+          <button class="btn btn-primary btn-outline-primary"><i class="icofont icofont-user-alt-3"></i></button>
+          <button class="btn btn-success btn-outline-success"><i class="icofont icofont-check-circled"></i></button>
+          <button class="btn btn-info btn-outline-info"><i class="icofont icofont-info-square"></i></button>
+          <button class="btn btn-warning btn-outline-warning"><i class="icofont icofont-warning-alt"></i></button>
+          <button class="btn btn-danger btn-outline-danger"><i class="icofont icofont-eye-alt"></i></button>
+          <button class="btn btn-inverse btn-outline-inverse"><i class="icofont icofont-exchange"></i></button>
+          <button class="btn btn-disabled btn-outline-disabled disabled"><i class="icofont icofont-not-allowed"></i></button>
+        </div>
+        <div>
+          <button class="btn btn-default btn-outline-default btn-icon"><i class="icofont icofont-star"></i></button>
+          <button class="btn btn-primary btn-outline-primary btn-icon"><i class="icofont icofont-user-alt-3"></i></button>
+          <button class="btn btn-success btn-outline-success btn-icon"><i class="icofont icofont-check-circled"></i></button>
+          <button class="btn btn-info btn-outline-info btn-icon"><i class="icofont icofont-info-square"></i></button>
+          <button class="btn btn-warning btn-outline-warning btn-icon"><i class="icofont icofont-warning-alt"></i></button>
+          <button class="btn btn-danger btn-outline-danger btn-icon"><i class="icofont icofont-eye-alt"></i></button>
+          <button class="btn btn-inverse btn-outline-inverse btn-icon"><i class="icofont icofont-exchange"></i></button>
+          <button class="btn btn-disabled btn-outline-disabled btn-icon disabled"><i class="icofont icofont-not-allowed"></i></button>
+        </div>
+      </app-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <app-card [title]="'Group Buttons'">
+        <!-- button Default -->
+        <p>Use <code>btn-xlg, btn-lg, btn-md, btn-sm, btn-mini</code> inside class to use different size button.</p>
+        <div>
+          <div class="btn-group " role="group" data-toggle="tooltip" data-placement="top" title="" data-original-title=".btn-xlg">
+            <button type="button" class="btn btn-primary btn-xlg waves-effect waves-light">Left</button>
+            <button type="button" class="btn btn-primary btn-xlg waves-effect waves-light">Middle</button>
+            <button type="button" class="btn btn-primary btn-xlg waves-effect waves-light">Right</button>
+          </div>
+          <div class="btn-group " role="group" data-toggle="tooltip" data-placement="top" title="" data-original-title=".btn-xlg">
+            <button type="button" class="btn btn-primary btn-lg waves-effect waves-light">Left</button>
+            <button type="button" class="btn btn-primary btn-lg waves-effect waves-light">Middle</button>
+            <button type="button" class="btn btn-primary btn-lg waves-effect waves-light">Right</button>
+          </div>
+          <div class="btn-group " role="group" data-toggle="tooltip" data-placement="top" title="" data-original-title=".btn-xlg">
+            <button type="button" class="btn btn-primary btn-md waves-effect waves-light">Left</button>
+            <button type="button" class="btn btn-primary btn-md waves-effect waves-light">Middle</button>
+            <button type="button" class="btn btn-primary btn-md waves-effect waves-light">Right</button>
+          </div>
+          <div class="btn-group " role="group" data-toggle="tooltip" data-placement="top" title="" data-original-title=".btn-xlg">
+            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light">Left</button>
+            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light">Middle</button>
+            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light">Right</button>
+          </div>
+          <div class="btn-group " role="group" data-toggle="tooltip" data-placement="top" title="" data-original-title=".btn-xlg">
+            <button type="button" class="btn btn-primary btn-mini waves-effect waves-light">Left</button>
+            <button type="button" class="btn btn-primary btn-mini waves-effect waves-light">Middle</button>
+            <button type="button" class="btn btn-primary btn-mini waves-effect waves-light">Right</button>
+          </div>
+        </div>
+        <div>
+          <div class="btn-group " role="group" data-toggle="tooltip" data-placement="top" title="" data-original-title=".btn-xlg">
+            <button type="button" class="btn btn-primary btn-xlg waves-effect waves-light"><i class="icofont icofont-info-square"></i>Left</button>
+            <button type="button" class="btn btn-primary btn-xlg waves-effect waves-light"><i class="icofont icofont-info-square"></i>Middle</button>
+            <button type="button" class="btn btn-primary btn-xlg waves-effect waves-light"><i class="icofont icofont-info-square"></i>Right</button>
+          </div>
+          <div class="btn-group " role="group" data-toggle="tooltip" data-placement="top" title="" data-original-title=".btn-xlg">
+            <button type="button" class="btn btn-primary btn-lg waves-effect waves-light"><i class="icofont icofont-info-square"></i>Left</button>
+            <button type="button" class="btn btn-primary btn-lg waves-effect waves-light"><i class="icofont icofont-info-square"></i>Middle</button>
+            <button type="button" class="btn btn-primary btn-lg waves-effect waves-light"><i class="icofont icofont-info-square"></i>Right</button>
+          </div>
+          <div class="btn-group " role="group" data-toggle="tooltip" data-placement="top" title="" data-original-title=".btn-xlg">
+            <button type="button" class="btn btn-primary btn-md waves-effect waves-light"><i class="icofont icofont-info-square"></i>Left</button>
+            <button type="button" class="btn btn-primary btn-md waves-effect waves-light"><i class="icofont icofont-info-square"></i>Middle</button>
+            <button type="button" class="btn btn-primary btn-md waves-effect waves-light"><i class="icofont icofont-info-square"></i>Right</button>
+          </div>
+          <div class="btn-group " role="group" data-toggle="tooltip" data-placement="top" title="" data-original-title=".btn-xlg">
+            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light"><i class="icofont icofont-info-square"></i>Left</button>
+            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light"><i class="icofont icofont-info-square"></i>Middle</button>
+            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light"><i class="icofont icofont-info-square"></i>Right</button>
+          </div>
+          <div class="btn-group " role="group" data-toggle="tooltip" data-placement="top" title="" data-original-title=".btn-xlg">
+            <button type="button" class="btn btn-primary btn-mini waves-effect waves-light"><i class="icofont icofont-info-square"></i>Left</button>
+            <button type="button" class="btn btn-primary btn-mini waves-effect waves-light"><i class="icofont icofont-info-square"></i>Middle</button>
+            <button type="button" class="btn btn-primary btn-mini waves-effect waves-light"><i class="icofont icofont-info-square"></i>Right</button>
+          </div>
+        </div>
+      </app-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <app-card [title]="'Social Buttons'">
+        <a href="javascript:;" class="btn btn-facebook"><i class="icofont icofont-social-facebook"></i>Facebook</a>
+        <a href="javascript:;" class="btn btn-twitter"><i class="icofont icofont-social-twitter"></i>Twitter</a>
+        <a href="javascript:;" class="btn btn-linkedin"><i class="icofont icofont-brand-linkedin"></i>Linkedin</a>
+        <a href="javascript:;" class="btn btn-dribbble"><i class="icofont icofont-social-dribble"></i>Dribble</a>
+        <a href="javascript:;" class="btn btn-google-plus"><i class="icofont icofont-social-google-plus"></i>Google+</a>
+        <a href="javascript:;" class="btn btn-instagram"><i class="icofont icofont-social-instagram"></i>Instagram</a>
+        <a href="javascript:;" class="btn btn-pinterest"><i class="icofont icofont-social-pinterest"></i>Pinterest</a>
+        <a href="javascript:;" class="btn btn-dropbox"><i class="icofont icofont-social-dropbox"></i>Dropbox</a>
+        <a href="javascript:;" class="btn btn-tumblr"><i class="icofont icofont-social-tumblr"></i>Tumbler</a>
+      </app-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <app-card [title]="'Social Buttons without label'" [blockClass]="'remove-label'">
+        <a href="javascript:;" class="btn btn-facebook"><i class="icofont icofont-social-facebook"></i></a>
+        <a href="javascript:;" class="btn btn-twitter"><i class="icofont icofont-social-twitter"></i></a>
+        <a href="javascript:;" class="btn btn-linkedin"><i class="icofont icofont-brand-linkedin"></i></a>
+        <a href="javascript:;" class="btn btn-dribbble"><i class="icofont icofont-social-dribble"></i></a>
+        <a href="javascript:;" class="btn btn-google-plus"><i class="icofont icofont-social-google-plus"></i></a>
+        <a href="javascript:;" class="btn btn-instagram"><i class="icofont icofont-social-instagram"></i></a>
+        <a href="javascript:;" class="btn btn-pinterest"><i class="icofont icofont-social-pinterest"></i></a>
+        <a href="javascript:;" class="btn btn-dropbox"><i class="icofont icofont-social-dropbox"></i></a>
+        <a href="javascript:;" class="btn btn-tumblr"><i class="icofont icofont-social-tumblr"></i></a>
+      </app-card>
+    </div>
+    <div class="col-sm-6">
+      <app-card [title]="'Link Buttons'" [blockClass]="'remove-label'">
+        <a href="javascript:;" class="btn btn-primary">Link</a>
+        <button type="button" class="btn btn-primary waves-effect waves-light">Button</button>
+        <input type="button" class="btn btn-primary waves-effect waves-light" value="Input">
+        <input type="submit" class="btn btn-primary waves-effect waves-light" value="Submit">
+      </app-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <app-card [title]="'Block Buttons'">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="form-group">
+              <button class="btn btn-primary btn-block">Default Button</button>
+              <button class="btn btn-primary btn-outline-primary btn-block"><i class="icofont icofont-user-alt-3"></i>Border Button</button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <!-- Block level buttons with icon -->
+            <div class="form-group">
+              <button class="btn btn-success btn-square btn-block">Square Button</button>
+              <button class="btn btn-info btn-round btn-block">Rounded Button</button>
+            </div>
+          </div>
+        </div>
+      </app-card>
+    </div>
+  </div>
+</div>

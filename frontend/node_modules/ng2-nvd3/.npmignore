@@ -1,0 +1,10 @@
+.idea
+.vscode
+.DS_Store
+Thumbs.db
+
+coverage/
+node_modules/
+test/
+tsconfig.json
+karma.conf.js

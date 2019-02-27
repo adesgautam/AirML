@@ -1,0 +1,54 @@
+.squeezebox .sb-item {
+    border-bottom: 1px solid #E0E0E0;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.squeezebox sb-item:first-child .sb-item {
+    border-top: 1px solid #E0E0E0;
+}
+
+.squeezebox .sb-item-head a {
+    color: #000000;
+    cursor: pointer;
+    display: block;
+}
+
+.squeezebox .sb-item .sb-item-head a .toggle-icon {
+    display: block;
+    float: right;
+    height: 16px;
+    position: relative;
+    transform: rotate(45deg);
+    transition: 0.3s transform;
+    width: 16px;
+}
+
+.squeezebox .sb-item.is-collapsed .sb-item-head a .toggle-icon {
+    transform: rotate(0);
+}
+
+.squeezebox .sb-item-head a .toggle-icon:before,
+.squeezebox .sb-item-head a .toggle-icon:after {
+    background: #000000;
+    content: ' ';
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 1px;
+}
+
+.squeezebox .sb-item-head a .toggle-icon:after {
+    transform: rotate(90deg);
+}
+
+.squeezebox .sb-item .sb-item-body {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s height;
+}
+
+.squeezebox .sb-item .sb-item-body .inner {
+    padding: 10px 0 0 0;
+}
