@@ -26,7 +26,11 @@ The project is divided into 3 parts.
 
   The frontend was built using Angular 4.
   
-  First install the dependencies using `npm install` and then run the angular server use the following command 
+  First install the dependencies using 
+
+  `npm install` 
+
+  and then run the angular server use the following command 
 
   `ng serve`.
   
