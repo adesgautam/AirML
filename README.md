@@ -13,11 +13,13 @@ The project is divided into 3 parts.
   It contains data from 249 engines with 21 sensor readings and 3 operational settings.
 
   #### A look at the raw data:
+
   ![Raw Data](docs/raw_data.png)
   
   After data cleaning, labeling and feature engineering the data is used to feed into Machine Learning algorithms.
     
   #### The cleaned data:
+  
   ![Cleaned Data](docs/cleaned_data.png)
   
   The algorithms Random Forest, XGBoost and Neural Network were tested and the best one to perform was Random Forest for predictions.
@@ -26,13 +28,7 @@ The project is divided into 3 parts.
 
   The frontend was built using Angular 4.
   
-  First install the dependencies using 
-
-  `npm install` 
-
-  and then run the angular server use the following command 
-
-  `ng serve`.
+  First install the dependencies using  `npm install`  and then run the angular server use the following command  `ng serve`.
   
 
   ![](docs/demo.png)
@@ -48,15 +44,9 @@ The project is divided into 3 parts.
 
 The backend is built using Django.
   
-Install the dependencies using 
+Install the dependencies using   `pip install -r requirements.txt`   and then run the server using  `python manage.py runserver`.
 
-`pip install -r requirements.txt` 
-
-and then run the server using 
-
-`python manage.py runserver`.
-
-Now, goto `http://localhost:4200` to see the application running.
+Now, goto  `http://localhost:4200`  to see the application running.
 
 You can see the working of the application below
 
