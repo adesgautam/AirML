@@ -1,6 +1,4 @@
-# AirML
-
-![Logo](docs/logo.png)
+![Logo](docs/logo.png) #AirML
 
 ## Using machine learning to predict the aircraft life and other parameters.
 
