@@ -52,5 +52,8 @@ You can see the working of the application below
 
 ![](docs/flowchart.png)
 
+Developed by:
+
+[Adesh Gautam](http://www.adeshgautam.me), [Kunal Sharma](https://github.com/kunal097), [Shreya Gupta](https://github.com/imshreya)
 
 ### To download the models and data directories contact me at adeshg7@gmail.com
